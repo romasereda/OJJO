@@ -14,8 +14,6 @@
 
   <meta name="theme-color" content="#000000"> <!-- цвет заголовка в мобильных браузерах -->
 
-  <meta http-equiv="Cache-Control" content="max-age=31536000">
-
   <title>OJJO</title>
 
   <link rel="stylesheet" href="css/style.min.css">
@@ -44,13 +42,13 @@
 
       <ul class="navigation__list navigation__list--right">
         <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--padding navigation__link--margin-0">
+          <a href="#" class="search-button-show navigation__link navigation__link--padding navigation__link--margin-0">
             <svg class="navigation__icon navigation__icon--pos-absolute" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 19l-5.15-5.15a7 7 0 10-2 2L19 21l2-2zM5 10a5 5 0 1110.01.01A5 5 0 015 10z" fill="#fff"/></svg>
             Поиск
           </a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__link--margin-left">Вход/Регистрация</a>
+          <a href="#" class="login-button-show navigation__link navigation__link--margin-left">Вход/Регистрация</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link navigation__link--margin-25">
@@ -397,7 +395,7 @@
         <div class="mailing__wrapper-outline">
           <div class="mailing__wrapper">
             <input type="email" class="input input--mailing" placeholder="Ваш e-mail">
-            <button class="button button--form button--form-mailing" type="submit">отправить</button>
+            <button class="button button--mailing" type="submit">отправить</button>
           </div>
         </div>
 
@@ -543,6 +541,31 @@
     </ul>
 
   </footer>
+
+  <div class="modal modal-hide modal--search">
+    <form action="#" class="form form--search">
+      <input type="email" class="input input--flex-grow-1" placeholder="Название изделия">
+      <button class="button" type="submit">Поиск</button>
+      <div class="hamburgers hamburgers-close hamburgers--form-close">
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--top"></div>
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--bottom"></div>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal modal-hide modal--login">
+    <form action="#" class="form form--login">
+      <input type="email" class="input input--flex-grow-1" placeholder="e-mail">
+      <input type="password" class="input input--flex-grow-1" placeholder="пароль">
+      <button class="button" type="submit">Поиск</button>
+      <div class="form__line"></div>
+      <a class="button">Регистрация</a>
+      <div class="hamburgers hamburgers-close hamburgers--form-close">
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--top"></div>
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--bottom"></div>
+      </div>
+    </form>
+  </div>
 
   <script src="js/script.min.js"></script>
 
