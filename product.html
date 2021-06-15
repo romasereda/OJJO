@@ -74,352 +74,70 @@
 
   <main>
 
-    <section class="catalog">
+    <ul class="breadcrumbs container">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Категория</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--last">
+        Подвеска Dolce & Gabanna
+      </li>
+    </ul>
 
-      <form action="#" class="catalog-form container">
+    <div class="product container">
 
-        <ul class="catalog-form__legend-list">
-          <li class="catalog-form__legend-item">
+      <div class="slider">
 
-            <div class="catalog-form__legend">Бренд</div>
+        <div class="slider__content">
+          <img src="images/dest/product_big_1.jpg" alt="" class="slider__image-big show">
+          <img src="images/dest/product_big_2.jpg" alt="" class="slider__image-big hide">
+          <img src="images/dest/product_big_3.jpg" alt="" class="slider__image-big hide">
+        </div>
 
-            <div class="catalog-form__wrapper hide">
-            
-              <div class="catalog-form__block">
-                <ul class="catalog-form__list">
-                  <li class="catalog-form__item">
-                    <input type="checkbox" class="catalog-form__checkbox" id="brend-versacci" name="brend-versacci">
-                    <label for="brend-versacci" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Versacci
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="checkbox" class="catalog-form__checkbox" id="brend-trebbo" name="brend-trebbo">
-                    <label for="brend-trebbo" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Trebbo
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="checkbox" class="catalog-form__checkbox" id="brend-jewerly" name="brend-jewerly">
-                    <label for="brend-jewerly" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Jewelry for you family
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="checkbox" class="catalog-form__checkbox" id="brend-ghoret" name="brend-ghoret">
-                    <label for="brend-ghoret" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      VIP ghoret
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="checkbox" class="catalog-form__checkbox" id="brend-dolce" name="brend-dolce">
-                    <label for="brend-dolce" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Dolce & Gabanna
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
+        <ul class="slider__list">
+          <li class="slider__item">
+            <img src="images/dest/product_small_1.jpg" alt="" class="slider__image-min">
           </li>
-          <li class="catalog-form__legend-item">
-
-            <div class="catalog-form__legend">Цена</div>
-            
-            <div class="catalog-form__wrapper catalog-form__wrapper--450right hide">
-            
-              <div class="catalog-form__block">
-                <div>
-                  <label for="price-min" class="catalog-form__label">От</label>
-                  <p class="catalog-form__text"><input type="number" class="input input--small" id="price-min" name="price-min" placeholder="10"> тыс. руб.</p>
-                </div>
-                <div>
-                  <label for="price-max" class="catalog-form__label">До</label>
-                  <p class="catalog-form__text"><input type="number" class="input input--small" id="price-max" name="price-max" placeholder="1 000"> тыс. руб.</p>
-                </div>  
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
+          <li class="slider__item">
+            <img src="images/dest/product_small_2.jpg" alt="" class="slider__image-min">
           </li>
-          <li class="catalog-form__legend-item">
-
-            <div class="catalog-form__legend">Для кого</div>
-            
-            <div class="catalog-form__wrapper catalog-form__wrapper--last768 hide">
-            
-              <div class="catalog-form__block">
-                <ul class="catalog-form__list">
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="whom-hasband" name="whom">
-                    <label for="whom-hasband" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Мужу
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="whom-wife" name="whom">
-                    <label for="whom-wife" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Жене
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="whom-partner" name="whom">
-                    <label for="whom-partner" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Партнеру
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
-          </li>
-          <li class="catalog-form__legend-item">
-
-            <div class="catalog-form__legend">Коллекция</div>
-            
-            <div class="catalog-form__wrapper catalog-form__wrapper--450right hide">
-            
-              <div class="catalog-form__block">
-                <ul class="catalog-form__list">
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-earrings" name="collection">
-                    <label for="collection-earrings" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Серги
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-cufflinks-women" name="collection">
-                    <label for="collection-cufflinks-women" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Запонки для женцин
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-bracelets" name="collection">
-                    <label for="collection-bracelets" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Браслеты
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-cufflinks-men" name="collection">
-                    <label for="collection-cufflinks-men" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Запонки для мужчин
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-clips" name="collection">
-                    <label for="collection-clips" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Зажимы для галстуков
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
-          </li>
-          <li class="catalog-form__legend-item">
-
-            <div class="catalog-form__legend">Сезон</div>
-            
-            <div class="catalog-form__wrapper hide">
-            
-              <div class="catalog-form__block">
-                <ul class="catalog-form__list">
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-summer" name="season">
-                    <label for="collection-summer" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Лето
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-spring" name="season">
-                    <label for="collection-spring" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Весна/Осень
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="collection-winters" name="season">
-                    <label for="collection-winters" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Зима
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
-          </li>
-          <li class="catalog-form__legend-item">
-
-            <div class="catalog-form__legend">Событие</div>
-            
-            <div class="catalog-form__wrapper catalog-form__wrapper--last hide">
-            
-              <div class="catalog-form__block">
-                <ul class="catalog-form__list">
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="event-official" name="event">
-                    <label for="event-official" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Официальное
-                    </label>
-                  </li>
-                  <li class="catalog-form__item">
-                    <input type="radio" class="catalog-form__checkbox" id="event-no-official" name="event">
-                    <label for="event-no-official" class="catalog-form__label">
-                      <span class="catalog-form__block-checkbox">
-                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
-                      </span>
-                      Неформальное
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-form__block catalog-form__block--border">
-                <button class="button-underline">Очистить</button>
-                <button class="button button--catalog">Показать</button>
-              </div>
-            
-            </div>
-          
+          <li class="slider__item">
+            <img src="images/dest/product_small_3.jpg" alt="" class="slider__image-min">
           </li>
         </ul>
 
-      </form>
 
-      <div class="catalog__content container">
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
-        <div class="catalog__line"></div>
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
-        <div class="catalog__item">
-          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
-          <h3 class="catalog__name">
-            <span class="catalog__subname">подвеска</span>
-            Dolce & Gabanna
-          </h3>
-          <a href="product.html" class="button">175 000 ₽</a>
-        </div>
       </div>
 
-      <button class="button catalog__button">Покажите еще</button>
+      <div class="product__wrapper">
 
-    </section>
+        <h2 class="product__title">Подвеска Dolce & Gabbara</h2>
+        <div class="product-feature">
+          <p class="product-feature__item">
+            <span class="product-feature__name">Категория:</span>Подвески
+          </p>
+          <p class="product-feature__item">
+            <span class="product-feature__name">Бренд:</span>>Dolce & Gabbara
+          </p>
+          </div>
+
+        <p class="product__paragraph">Мы лучшие в своем деле по одной простой причине: в каждое украшение, произведенное под брендом «Ювелирный Завод «OJJO», вкладывается огромное количество стараний и любви по отношению к нашим клиентам. Благодаря такому подходу наша компания стала лауреатом рейтинга «Лучшие предприятия Украины» и получила приз в номинации «Европейское качество». Для изготовления драгоценностей из золота мы используем золото 585 пробы, что означает эталонное качество каждого украшения, представленного в нашем ассортименте. Сплав 585 пробы – это гарантия прочности и устойчивости украшений по отношению к разного рода механическим воздействиям.</p>
+
+        <b class="product__price">200 000 ₽ </b>
+
+        <div class="product__wrapper--button">
+          <a href="#" class="button">Купить</a>
+          <button class="button button--big-white">добавить в корзину</button>
+        </div>
+
+      </div>
+
+    </div>
 
     <div class="info">
 
@@ -449,6 +167,42 @@
       </ul>
 
     </div>
+
+    <section class="catalog section">
+
+      <h2 class="section__title">
+        <span class="section__subtitle">Мы подготовили для вас кое-что еще</span>
+        Товары, которые могут Вам понравиться
+      </h2>
+
+      <div class="catalog__content catalog__content--margin-none container">
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+      </div>
+
+    </section>
 
     <section class="section section--bg-black">
 
