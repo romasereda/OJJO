@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- <meta name="description" content="описание"> описание страницы -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="icon" href="путь"> фавикон -->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="путь"> фавикон для Apple-устройств -->
+
+  <!-- <meta property="og:image" content="путь">  URL изображения, характеризующего страницу -->
+
+  <meta name="theme-color" content="#F1BB00"> <!-- цвет заголовка в мобильных браузерах -->
+
+  <title>OJJO</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+
+    <nav class="navigation container">
+
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контрагентам</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Дизайнерам</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Вакансии</a>
+        </li>
+      </ul>
+
+      <a href="#" class="logo">
+        <svg width="216" height="52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44.55 44.48C39.52 49.49 33.36 52 26.08 52a25.4 25.4 0 01-18.54-7.52A25.23 25.23 0 010 26c0-7.26 2.51-13.4 7.54-18.4A25.27 25.27 0 0126.08 0c7.28 0 13.44 2.53 18.47 7.6A24.88 24.88 0 0152.17 26c0 7.26-2.54 13.42-7.62 18.48zm-31.19-5.59a17.44 17.44 0 0012.72 5.09c5.03 0 9.25-1.7 12.65-5.09 3.45-3.44 5.17-7.73 5.17-12.89s-1.72-9.43-5.17-12.82a17.08 17.08 0 00-12.65-5.16c-5.03 0-9.27 1.72-12.72 5.16-3.4 3.39-5.1 7.66-5.1 12.82s1.7 9.45 5.1 12.9zM80.2 52c-7.8 0-13.2-3.06-16.16-9.17l7.11-4.15c1.63 3.53 4.67 5.3 9.13 5.3 2.87 0 5.07-.7 6.6-2.08 1.59-1.43 2.38-3.44 2.38-6.02V.93h8.26v34.95c0 5.16-1.63 9.15-4.88 11.97C89.38 50.62 85.24 52 80.2 52zM128.66 52c-7.8 0-13.2-3.06-16.16-9.17l7.11-4.15c1.63 3.53 4.67 5.3 9.13 5.3 2.87 0 5.07-.7 6.6-2.08 1.59-1.43 2.38-3.44 2.38-6.02V.93h8.26v34.95c0 5.16-1.63 9.15-4.88 11.97-3.26 2.77-7.4 4.15-12.44 4.15zM208.38 44.48C203.35 49.49 197.2 52 189.92 52a25.4 25.4 0 01-18.54-7.52A25.23 25.23 0 01163.83 26c0-7.26 2.52-13.4 7.55-18.4A25.27 25.27 0 01189.92 0c7.28 0 13.43 2.53 18.46 7.6A24.87 24.87 0 01216 26c0 7.26-2.54 13.42-7.62 18.48zm-31.18-5.59a17.44 17.44 0 0012.72 5.09c5.03 0 9.24-1.7 12.64-5.09 3.45-3.44 5.18-7.73 5.18-12.89s-1.73-9.43-5.18-12.82a17.08 17.08 0 00-12.64-5.16c-5.03 0-9.27 1.72-12.72 5.16-3.4 3.39-5.1 7.66-5.1 12.82s1.7 9.45 5.1 12.9z" fill="#fff"/><path d="M36.13 23.93v-.05a.7.7 0 00-.06-.19l-2.95-5.27s-.37-.51-.46-.51H20.13l-3.77 5.6-.05.06v.02a.97.97 0 00-.08.18l-.02.05a.9.9 0 000 .5l.03.05c.02.07.05.13.08.18l9.12 12.85.02.03c.04.07.1.13.17.18l.05.04c.05.04.1.06.19.1l.05.02.24.03c.08 0 .15 0 .25-.04l.07-.02a.87.87 0 00.18-.1l.04-.03a.76.76 0 00.15-.16l9.13-12.87a.96.96 0 00.15-.4v-.07l.01-.05v-.13zm-4.9-.34l1.3-2.62 1.3 2.62h-2.6zm-.77 1.55h3.08l-5.14 7.24 2.06-7.24zm-.76-2.33l-1.88-2.84h3.28l-1.4 2.84zm-6.01 2.33h4.95l-2.48 8.72-2.47-8.72zm.49-1.55l1.98-3 1.98 3h-3.96zm-1.4-1.02l-.86-2.6h2.58l-1.72 2.6zm1.14 9.81l-5.14-7.24h3.08l2.06 7.24zM20.44 21l.86 2.6h-2.58l1.72-2.6zM199.8 23.93v-.05a.7.7 0 00-.07-.19l-2.94-5.27s-.37-.51-.46-.51h-12.54l-3.76 5.6-.05.06v.02a.96.96 0 00-.08.18l-.02.05a.9.9 0 000 .5l.03.05c.02.07.05.13.08.18l9.12 12.85.01.03c.05.07.1.13.18.18l.05.04c.05.04.1.06.19.1l.05.02.24.03c.08 0 .15 0 .25-.04l.06-.02a.9.9 0 00.18-.1l.05-.03a.76.76 0 00.15-.16l9.13-12.87a.96.96 0 00.15-.4v-.07l.01-.05-.01-.13zm-4.9-.34l1.3-2.62 1.3 2.62h-2.6zm-.77 1.55h3.08l-5.14 7.24 2.06-7.24zm-.76-2.33l-1.88-2.84h3.28l-1.4 2.84zm-6.01 2.33h4.94l-2.47 8.72-2.47-8.72zm.49-1.55l1.98-3 1.98 3h-3.96zm-1.4-1.02l-.86-2.6h2.58l-1.72 2.6zm1.14 9.81l-5.14-7.24h3.08l2.06 7.24zM184.1 21l.86 2.6h-2.58l1.72-2.6z" fill="#fff"/></svg>
+      </a>
+
+      <ul class="navigation__list navigation__list--right">
+        <li class="navigation__item">
+          <a href="#" class="search-button-show navigation__link navigation__link--padding navigation__link--margin-0">
+            <svg class="navigation__icon navigation__icon--pos-absolute" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 19l-5.15-5.15a7 7 0 10-2 2L19 21l2-2zM5 10a5 5 0 1110.01.01A5 5 0 015 10z" fill="#fff"/></svg>
+            Поиск
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="login-button-show navigation__link navigation__link--margin-left">Вход/Регистрация</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--margin-25">
+            <svg class="navigation__icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4a4 4 0 110 8 4 4 0 010-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" fill="#fff"/></svg>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--margin-0">
+            <svg class="navigation__icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.97 4.6C6.22.34.64 2.66.64 7.3c0 3.48 7.65 8.92 8.33 9.63.7-.7 7.96-6.15 7.96-9.64 0-4.6-5.2-6.95-7.96-2.7z" fill="#fff"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hamburgers hamburgers-show">
+        <div class="hamburgers__line hamburgers__line--top"></div>
+        <div class="hamburgers__line hamburgers__line--center"></div>
+        <div class="hamburgers__line hamburgers__line--bottom"></div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="catalog">
+
+      <form action="#" class="catalog-form container">
+
+        <ul class="catalog-form__legend-list">
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Бренд</div>
+
+            <div class="catalog-form__wrapper hide">
+            
+              <div class="catalog-form__block">
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input type="checkbox" class="catalog-form__checkbox" id="brend-versacci" name="brend-versacci">
+                    <label for="brend-versacci" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Versacci
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="checkbox" class="catalog-form__checkbox" id="brend-trebbo" name="brend-trebbo">
+                    <label for="brend-trebbo" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Trebbo
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="checkbox" class="catalog-form__checkbox" id="brend-jewerly" name="brend-jewerly">
+                    <label for="brend-jewerly" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Jewelry for you family
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="checkbox" class="catalog-form__checkbox" id="brend-ghoret" name="brend-ghoret">
+                    <label for="brend-ghoret" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      VIP ghoret
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="checkbox" class="catalog-form__checkbox" id="brend-dolce" name="brend-dolce">
+                    <label for="brend-dolce" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Dolce & Gabanna
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Цена</div>
+            
+            <div class="catalog-form__wrapper catalog-form__wrapper--450right hide">
+            
+              <div class="catalog-form__block">
+                <div>
+                  <label for="price-min" class="catalog-form__label">От</label>
+                  <p class="catalog-form__text"><input type="number" class="input input--small" id="price-min" name="price-min" placeholder="10"> тыс. руб.</p>
+                </div>
+                <div>
+                  <label for="price-max" class="catalog-form__label">До</label>
+                  <p class="catalog-form__text"><input type="number" class="input input--small" id="price-max" name="price-max" placeholder="1 000"> тыс. руб.</p>
+                </div>  
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Для кого</div>
+            
+            <div class="catalog-form__wrapper catalog-form__wrapper--last768 hide">
+            
+              <div class="catalog-form__block">
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="whom-hasband" name="whom">
+                    <label for="whom-hasband" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Мужу
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="whom-wife" name="whom">
+                    <label for="whom-wife" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Жене
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="whom-partner" name="whom">
+                    <label for="whom-partner" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Партнеру
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Коллекция</div>
+            
+            <div class="catalog-form__wrapper catalog-form__wrapper--450right hide">
+            
+              <div class="catalog-form__block">
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-earrings" name="collection">
+                    <label for="collection-earrings" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Серги
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-cufflinks-women" name="collection">
+                    <label for="collection-cufflinks-women" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Запонки для женцин
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-bracelets" name="collection">
+                    <label for="collection-bracelets" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Браслеты
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-cufflinks-men" name="collection">
+                    <label for="collection-cufflinks-men" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Запонки для мужчин
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-clips" name="collection">
+                    <label for="collection-clips" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Зажимы для галстуков
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Сезон</div>
+            
+            <div class="catalog-form__wrapper hide">
+            
+              <div class="catalog-form__block">
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-summer" name="season">
+                    <label for="collection-summer" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Лето
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-spring" name="season">
+                    <label for="collection-spring" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Весна/Осень
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="collection-winters" name="season">
+                    <label for="collection-winters" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Зима
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+          <li class="catalog-form__legend-item">
+
+            <div class="catalog-form__legend">Событие</div>
+            
+            <div class="catalog-form__wrapper catalog-form__wrapper--last hide">
+            
+              <div class="catalog-form__block">
+                <ul class="catalog-form__list">
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="event-official" name="event">
+                    <label for="event-official" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Официальное
+                    </label>
+                  </li>
+                  <li class="catalog-form__item">
+                    <input type="radio" class="catalog-form__checkbox" id="event-no-official" name="event">
+                    <label for="event-no-official" class="catalog-form__label">
+                      <span class="catalog-form__block-checkbox">
+                        <svg class="catalog-form__checkmark" width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.33 6.99L1.6 4.24.4 5.42l3.92 3.93 8.1-8.1L11.23.09l-6.9 6.9z" fill="#fff"/></svg>
+                      </span>
+                      Неформальное
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-form__block catalog-form__block--border">
+                <button class="button-underline">Очистить</button>
+                <button class="button button--catalog">Показать</button>
+              </div>
+            
+            </div>
+          
+          </li>
+        </ul>
+
+      </form>
+
+      <div class="catalog__content container">
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__line"></div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+        <div class="catalog__item">
+          <img src="images/dest/catalog_1.jpg" alt="" class="catalog__image">
+          <h3 class="catalog__name">
+            <span class="catalog__subname">подвеска</span>
+            Dolce & Gabanna
+          </h3>
+          <a href="#" class="button">175 000 ₽</a>
+        </div>
+      </div>
+
+      <button class="button catalog__button">Покажите еще</button>
+
+    </section>
+
+    <div class="info">
+
+      <div class="info__text info__text--hide">
+        <p class="info__paragraph">Любовь не измерить каратами, но с их помощью довольно легко продемонстрировать глубину своих чувств по отношению к любимой женщине или мужчине. Драгоценные камни и металлы считаются таковыми не только из-за своей красоты, но и по причине малого количества относительно других металлов и минералов, встречающихся в природе. Когда мужчина дарит золотое кольцо или серьги любимой женщине, он тем самым демонстрирует, насколько дорог ему этот человек.</p>
+        <p class="info__paragraph">Наша ювелирная сеть создана в 1999 году, на границе нового тысячелетия, с целью дать возможность людям привнести в свою жизнь немного яркости и красоты. В нашем магазине ювелирных изделий представлены украшения, которые помогут выразить глубокие чувства по отношению к близким людям. Наша цель с самого начала существования – возродить истинное ювелирное искусство, даруя миру изысканные украшения с оригинальным дизайном, удовлетворяя потребности даже наиболее взыскательных и требовательных клиентов.</p>
+        <button class="info__button info__button--show button-underline button-underline--big">Читать польностью</button>
+      </div>
+
+      <ul class="info__images">
+        <li class="info__item">
+          <img src="images/dest/info_1.svg" alt="" class="info__image">
+          <span class="info__image-text">Бесплатная<br>доставка</span>
+        </li>
+        <li class="info__item">
+          <img src="images/dest/info_2.svg" alt="" class="info__image">
+          <span class="info__image-text">Индивидуальный<br>дизайн</span>
+        </li>
+        <li class="info__item">
+          <img src="images/dest/info_3.svg" alt="" class="info__image">
+          <span class="info__image-text">Бесплатная<br>примерка</span>
+        </li>
+        <li class="info__item">
+          <img src="images/dest/info_4.svg" alt="" class="info__image">
+          <span class="info__image-text">Личный<br>подход</span>
+        </li>
+      </ul>
+
+    </div>
+
+    <section class="section section--bg-black">
+
+      <h2 class="section__title">
+        <span class="section__subtitle">Полезные советы и персональный предложения</span>
+        Эксклюзивная рассылка
+      </h2>
+
+      <form class="mailing" action="#">
+
+        <ul class="mailing__list">
+          <li class="mailing__item">
+            <input class="mailing__checkbox" id="mailing-manager" type="checkbox" name="mailing-manager">
+            <label for="mailing-manager" class="mailing__text">
+              <svg class="mailing__svg" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 8.5l-3.75 2.17V6.33L11 8.5z" fill="#fff"/><path d="M4.75 2L16 8.5 4.75 15V2z" stroke="#fff"/></svg>
+              Личный менеджер
+            </label>
+          </li>
+          <li class="mailing__item">
+            <input class="mailing__checkbox" id="mailing-delivery" type="checkbox" name="mailing-delivery">
+            <label for="mailing-delivery" class="mailing__text">
+              <svg class="mailing__svg" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 8.5l-3.75 2.17V6.33L11 8.5z" fill="#fff"/><path d="M4.75 2L16 8.5 4.75 15V2z" stroke="#fff"/></svg>
+              Доставка и оформление
+            </label>
+          </li>
+          <li class="mailing__item">
+            <input  class="mailing__checkbox" id="mailing-design" type="checkbox" name="mailing-design">
+            <label for="mailing-design" class="mailing__text">
+              <svg class="mailing__svg" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 8.5l-3.75 2.17V6.33L11 8.5z" fill="#fff"/><path d="M4.75 2L16 8.5 4.75 15V2z" stroke="#fff"/></svg>
+              Индивидуальный дизайн
+            </label>
+        </ul>
+
+        <div class="mailing__wrapper-outline">
+          <div class="mailing__wrapper">
+            <input type="email" class="input input--mailing" placeholder="Ваш e-mail">
+            <button class="button button--mailing" type="submit">отправить</button>
+          </div>
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+
+    <div class="footer__block-top">
+
+      <div class="footer__block">
+
+        <h3 class="footer__title">Полезные ссылки</h3>
+
+        <div class="footer__wrapper">
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Оплата </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer__block">
+
+        <h3 class="footer__title">Оплата</h3>
+
+        <div class="footer__wrapper">
+
+          <p class="footer__text">Миссия компании «OJJO» - дать возможность украсить свою жизнь и ярко выразить чувства к близким. Теперь это стало еще проще с услугой «Оплата частями» клиентам ПриватБанка и Монобанка.</p>
+          <img src="images/dest/visa.png" alt="" class="footer__image-card">
+          <img src="images/dest/mastercard.png" alt="" class="footer__image-card">
+
+        </div>
+
+      </div>
+
+      <div class="footer__block">
+
+        <h3 class="footer__title">контакты</h3>
+
+        <div class="footer__wrapper">
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="tel:8(812)2345655" class="footer__link footer__link--tel">
+                <svg class="footer__svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.26 10.25a1.64 1.64 0 00-1.28-1.34c-2.58-.6-3.22-2.09-3.33-3.73C12.19 5.09 11.38 5 10 5s-2.2.1-2.65.18C7.25 6.82 6.6 8.3 4.02 8.9c-.66.16-1.18.68-1.28 1.34l-.5 3.45A1.98 1.98 0 004.2 16h11.6c1.24 0 2.13-1.1 1.95-2.3l-.5-3.45zM10 13.5A2.51 2.51 0 017.47 11c0-1.38 1.14-2.5 2.53-2.5 1.4 0 2.53 1.12 2.53 2.5s-1.14 2.5-2.53 2.5zM19.95 4c-.02-1.5-3.84-4-9.95-4C3.9 0 .07 2.5.05 4 .03 5.5.07 7.45 2.59 7.13c2.94-.38 2.75-1.41 2.75-2.88 0-1.02 2.4-1.27 4.66-1.27 2.26 0 4.65.25 4.65 1.27 0 1.47-.18 2.5 2.76 2.88 2.52.32 2.56-1.63 2.54-3.13z" fill="#333"/></svg>
+                8 (812) 234-56-55
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="tel:8(246)2345655" class="footer__link footer__link--tel">
+                <svg class="footer__svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.26 10.25a1.64 1.64 0 00-1.28-1.34c-2.58-.6-3.22-2.09-3.33-3.73C12.19 5.09 11.38 5 10 5s-2.2.1-2.65.18C7.25 6.82 6.6 8.3 4.02 8.9c-.66.16-1.18.68-1.28 1.34l-.5 3.45A1.98 1.98 0 004.2 16h11.6c1.24 0 2.13-1.1 1.95-2.3l-.5-3.45zM10 13.5A2.51 2.51 0 017.47 11c0-1.38 1.14-2.5 2.53-2.5 1.4 0 2.53 1.12 2.53 2.5s-1.14 2.5-2.53 2.5zM19.95 4c-.02-1.5-3.84-4-9.95-4C3.9 0 .07 2.5.05 4 .03 5.5.07 7.45 2.59 7.13c2.94-.38 2.75-1.41 2.75-2.88 0-1.02 2.4-1.27 4.66-1.27 2.26 0 4.65.25 4.65 1.27 0 1.47-.18 2.5 2.76 2.88 2.52.32 2.56-1.63 2.54-3.13z" fill="#333"/></svg>
+                8 (246) 234-56-55
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="mailto:ojjo@ojjo.ua" class="footer__link footer__link--mail">
+                <svg class="footer__svg" width="18" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.57 1.29l7.5 4.03c.26.13.58.2.91.2.33 0 .65-.07.9-.2l7.5-4.03c.5-.27.96-1.29.06-1.29H.52c-.9 0-.43 1.02.05 1.29zm17.04 2.2L9.9 7.52c-.34.17-.58.2-.91.2a1.7 1.7 0 01-.9-.2L.37 3.49C0 3.29 0 3.52 0 3.7V11c0 .42.57 1 1 1h16c.43 0 1-.58 1-1V3.7c0-.18 0-.42-.39-.21z" fill="#333"/></svg>
+                ojjo@ojjo.ua
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer__block">
+
+        <h3 class="footer__title">Социальные сети</h3>
+
+        <div class="footer__wrapper">
+
+          <p class="footer__text">Компания «OJJO» имеет соц.сети</p>
+
+          <ul class="social social--footer">
+            <li class="social__item social__item--footer">
+              <a href="#" class="social__link social__link--footer">
+              <svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.84 11.29a4.27 4.27 0 00-3-3.01c-2.66-.72-13.34-.72-13.34-.72s-10.68 0-13.33.72a4.27 4.27 0 00-3.01 3c-.5 2.72-.74 5.47-.72 8.22-.02 2.75.22 5.5.72 8.21a4.27 4.27 0 003 3.01c2.66.72 13.34.72 13.34.72s10.68 0 13.33-.72a4.26 4.26 0 003.01-3c.5-2.72.74-5.47.72-8.22.02-2.75-.22-5.5-.72-8.21zM16.1 24.62V14.38l8.86 5.12-8.86 5.12z" fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="social__item social__item--footer">
+              <a href="#" class="social__link social__link--footer">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.04 22.14s2.91 2.87 3.63 4.2l.04.06c.29.5.36.88.22 1.17-.24.46-1.07.7-1.35.72h-5.14c-.36 0-1.1-.1-2.01-.72-.7-.48-1.38-1.28-2.05-2.06-1-1.16-1.86-2.16-2.73-2.16a.98.98 0 00-.33.05c-.66.21-1.5 1.15-1.5 3.66 0 .78-.62 1.23-1.05 1.23H17.4c-.8 0-4.98-.28-8.69-4.19C4.18 19.32.1 9.72.06 9.64c-.25-.63.28-.96.86-.96h5.2c.7 0 .92.42 1.08.8.18.43.86 2.16 1.98 4.11 1.8 3.18 2.91 4.47 3.8 4.47.17 0 .33-.05.48-.13 1.16-.64.94-4.78.89-5.63 0-.17 0-1.85-.6-2.66a2.56 2.56 0 00-1.59-.9c.12-.16.37-.42.69-.58.8-.4 2.23-.45 3.65-.45h.8c1.54.02 1.93.12 2.5.26 1.13.27 1.15 1 1.05 3.5-.03.71-.06 1.52-.06 2.46v.66c-.04 1.28-.09 2.72.82 3.3.11.08.25.12.39.12.3 0 1.25 0 3.79-4.36a32.52 32.52 0 002.04-4.38c.05-.1.2-.36.39-.47.13-.07.27-.1.42-.1h6.11c.67 0 1.12.1 1.2.35.15.41-.02 1.66-2.81 5.43l-1.25 1.65c-2.52 3.32-2.52 3.49.15 6z" fill="#fff"/></g><defs><clipPath><path fill="#fff" d="M0 0h36v36H0z"/></clipPath></defs></svg>
+              </a>
+            </li>
+            <li class="social__item social__item--footer">
+              <a href="#" class="social__link social__link--footer">
+              <svg width="40" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.33 34.12V20.8h4.6l.7-5.21h-5.3v-3.32c0-1.5.43-2.54 2.64-2.54h2.81V5.08a38.18 38.18 0 00-4.11-.2c-4.08 0-6.87 2.42-6.87 6.87v3.83h-4.58v5.21h4.59v13.33h5.52z" fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="social__item social__item--footer">
+              <a href="#" class="social__link social__link--footer">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31 5.58L4.4 15.83c-1.81.73-1.8 1.74-.33 2.2l6.83 2.12 15.8-9.96c.74-.46 1.43-.21.86.28l-12.8 11.56-.47 7.04c.7 0 1-.32 1.39-.7l3.31-3.22 6.9 5.1c1.27.7 2.19.34 2.5-1.18l4.53-21.34c.46-1.86-.7-2.7-1.92-2.15z" fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="social__item social__item--footer">
+              <a href="#" class="social__link social__link--footer">
+              <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.56 2.44c0-.32.04-.51.6-.51h7.46c1.3 0 2.02 1.1 2.54 3.19l.42 1.66h1.27c.23-4.72.43-6.78.43-6.78s-3.2.36-5.1.36H6.65L1.53.2v1.37l1.72.32c1.21.24 1.5.5 1.6 1.6 0 0 .11 3.28.11 8.65 0 5.38-.09 8.6-.09 8.6 0 .98-.39 1.34-1.59 1.58l-1.72.33V24l5.13-.16h8.55c1.93 0 6.39.16 6.39.16.1-1.17.75-6.48.85-7.06h-1.2L20 19.84c-1 2.29-2.48 2.45-4.11 2.45h-4.9c-1.64 0-2.42-.64-2.42-2.05V12.8s3.62 0 4.79.1c.91.06 1.46.32 1.76 1.6l.39 1.69h1.4l-.08-4.28.2-4.3h-1.4l-.45 1.89c-.28 1.24-.48 1.47-1.75 1.6-1.67.17-4.82.14-4.82.14V2.45h-.05z" fill="#fff"/></svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <ul class="footer__block-bottom">
+      <li class="footer__bottom-item">
+        <span>(c) 2020 OJJO jewelry</span>
+      </li>
+      <li class="footer__bottom-item">
+        <a href="#" class="footer__link footer__link--margin0">Договор публичной офферты</a>
+      </li>
+      <li class="footer__bottom-item">
+        <a href="#" class="footer__link footer__link--margin0">Контрагенам</a>
+      </li>
+      <li class="footer__bottom-item">
+        <a href="https://github.com/romasereda" class="footer__link footer__link--margin0">
+          Сделал
+          <svg class="footer__svg footer__svg--margin" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M16 0a16 16 0 00-5.05 31.18c.8.14 1.05-.33 1.05-.76v-2.77c-4.45.96-5.37-2.11-5.37-2.11-.73-1.85-1.78-2.34-1.78-2.34-1.45-1 .11-.97.11-.97 1.6.11 2.45 1.65 2.45 1.65 1.43 2.44 3.75 1.73 4.66 1.33a3.42 3.42 0 011.01-2.14c-3.55-.4-7.28-1.78-7.28-7.91 0-1.75.62-3.17 1.64-4.3-.16-.4-.71-2.02.16-4.23 0 0 1.35-.43 4.4 1.65a15.31 15.31 0 018.01 0c3.05-2.07 4.4-1.65 4.4-1.65.87 2.2.32 3.83.15 4.24a6.18 6.18 0 011.65 4.29c0 6.15-3.74 7.5-7.3 7.9.57.49 1.09 1.45 1.09 2.94v4.43c0 .43.26.9 1.07.74A16 16 0 0016 0z" fill="#181616" fill-rule="evenodd"/></svg>
+          romasereda
+        </a>
+      </li>
+    </ul>
+
+  </footer>
+
+  <div class="modal-menu hide">
+
+    <div class="modal-menu__header">
+
+      <a href="#" class="logo">
+        <svg  class="logo__svg" width="216" height="52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44.55 44.48C39.52 49.49 33.36 52 26.08 52a25.4 25.4 0 01-18.54-7.52A25.23 25.23 0 010 26c0-7.26 2.51-13.4 7.54-18.4A25.27 25.27 0 0126.08 0c7.28 0 13.44 2.53 18.47 7.6A24.88 24.88 0 0152.17 26c0 7.26-2.54 13.42-7.62 18.48zm-31.19-5.59a17.44 17.44 0 0012.72 5.09c5.03 0 9.25-1.7 12.65-5.09 3.45-3.44 5.17-7.73 5.17-12.89s-1.72-9.43-5.17-12.82a17.08 17.08 0 00-12.65-5.16c-5.03 0-9.27 1.72-12.72 5.16-3.4 3.39-5.1 7.66-5.1 12.82s1.7 9.45 5.1 12.9zM80.2 52c-7.8 0-13.2-3.06-16.16-9.17l7.11-4.15c1.63 3.53 4.67 5.3 9.13 5.3 2.87 0 5.07-.7 6.6-2.08 1.59-1.43 2.38-3.44 2.38-6.02V.93h8.26v34.95c0 5.16-1.63 9.15-4.88 11.97C89.38 50.62 85.24 52 80.2 52zM128.66 52c-7.8 0-13.2-3.06-16.16-9.17l7.11-4.15c1.63 3.53 4.67 5.3 9.13 5.3 2.87 0 5.07-.7 6.6-2.08 1.59-1.43 2.38-3.44 2.38-6.02V.93h8.26v34.95c0 5.16-1.63 9.15-4.88 11.97-3.26 2.77-7.4 4.15-12.44 4.15zM208.38 44.48C203.35 49.49 197.2 52 189.92 52a25.4 25.4 0 01-18.54-7.52A25.23 25.23 0 01163.83 26c0-7.26 2.52-13.4 7.55-18.4A25.27 25.27 0 01189.92 0c7.28 0 13.43 2.53 18.46 7.6A24.87 24.87 0 01216 26c0 7.26-2.54 13.42-7.62 18.48zm-31.18-5.59a17.44 17.44 0 0012.72 5.09c5.03 0 9.24-1.7 12.64-5.09 3.45-3.44 5.18-7.73 5.18-12.89s-1.73-9.43-5.18-12.82a17.08 17.08 0 00-12.64-5.16c-5.03 0-9.27 1.72-12.72 5.16-3.4 3.39-5.1 7.66-5.1 12.82s1.7 9.45 5.1 12.9z" fill="#fff"/><path d="M36.13 23.93v-.05a.7.7 0 00-.06-.19l-2.95-5.27s-.37-.51-.46-.51H20.13l-3.77 5.6-.05.06v.02a.97.97 0 00-.08.18l-.02.05a.9.9 0 000 .5l.03.05c.02.07.05.13.08.18l9.12 12.85.02.03c.04.07.1.13.17.18l.05.04c.05.04.1.06.19.1l.05.02.24.03c.08 0 .15 0 .25-.04l.07-.02a.87.87 0 00.18-.1l.04-.03a.76.76 0 00.15-.16l9.13-12.87a.96.96 0 00.15-.4v-.07l.01-.05v-.13zm-4.9-.34l1.3-2.62 1.3 2.62h-2.6zm-.77 1.55h3.08l-5.14 7.24 2.06-7.24zm-.76-2.33l-1.88-2.84h3.28l-1.4 2.84zm-6.01 2.33h4.95l-2.48 8.72-2.47-8.72zm.49-1.55l1.98-3 1.98 3h-3.96zm-1.4-1.02l-.86-2.6h2.58l-1.72 2.6zm1.14 9.81l-5.14-7.24h3.08l2.06 7.24zM20.44 21l.86 2.6h-2.58l1.72-2.6zM199.8 23.93v-.05a.7.7 0 00-.07-.19l-2.94-5.27s-.37-.51-.46-.51h-12.54l-3.76 5.6-.05.06v.02a.96.96 0 00-.08.18l-.02.05a.9.9 0 000 .5l.03.05c.02.07.05.13.08.18l9.12 12.85.01.03c.05.07.1.13.18.18l.05.04c.05.04.1.06.19.1l.05.02.24.03c.08 0 .15 0 .25-.04l.06-.02a.9.9 0 00.18-.1l.05-.03a.76.76 0 00.15-.16l9.13-12.87a.96.96 0 00.15-.4v-.07l.01-.05-.01-.13zm-4.9-.34l1.3-2.62 1.3 2.62h-2.6zm-.77 1.55h3.08l-5.14 7.24 2.06-7.24zm-.76-2.33l-1.88-2.84h3.28l-1.4 2.84zm-6.01 2.33h4.94l-2.47 8.72-2.47-8.72zm.49-1.55l1.98-3 1.98 3h-3.96zm-1.4-1.02l-.86-2.6h2.58l-1.72 2.6zm1.14 9.81l-5.14-7.24h3.08l2.06 7.24zM184.1 21l.86 2.6h-2.58l1.72-2.6z" fill="#fff"/></svg>
+      </a>
+
+      <div class="hamburgers hamburgers-close">
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--top"></div>
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--bottom"></div>
+      </div>
+
+    </div>
+
+    <nav class="modal-menu__navigation">
+
+      <ul class="modal-list">
+        <li class="modal-list__item">
+          <a href="#" class="modal-list__link">Контрагентам</a>
+        </li>
+        <li class="modal-list__item">
+          <a href="#" class="modal-list__link">Дизайнерам</a>
+        </li>
+        <li class="modal-list__item">
+          <a href="#" class="modal-list__link">Вакансии</a>
+        </li>
+        <li class="modal-list__item">
+          <a href="#" class="modal-list__link">Вход/Регистрация</a>
+        </li>
+      </ul>
+
+      <ul class="modal-account">
+        <li class="modal-account__item">
+          <a href="#" class="modal-account__link">
+          <svg class="modal-account__icon" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 .33A8.33 8.33 0 1117 17 8.33 8.33 0 0117 .33zm0 20.84c9.2 0 16.67 3.73 16.67 8.33v4.17H.33V29.5c0-4.6 7.46-8.33 16.67-8.33z" fill="#fff"/></svg>             </a>
+        </li>
+        <li class="modal-account__item">
+          <a href="#" class="modal-account__link">
+          <svg class="modal-account__icon" width="37" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.94 5.21C12.82-4.24.43.91.43 11.21c0 7.74 16.99 19.84 18.51 21.4 1.54-1.56 17.68-13.66 17.68-21.4 0-10.22-11.55-15.45-17.68-6z" fill="#fff"/></svg>             </a>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+          <svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.84 11.29a4.27 4.27 0 00-3-3.01c-2.66-.72-13.34-.72-13.34-.72s-10.68 0-13.33.72a4.27 4.27 0 00-3.01 3c-.5 2.72-.74 5.47-.72 8.22-.02 2.75.22 5.5.72 8.21a4.27 4.27 0 003 3.01c2.66.72 13.34.72 13.34.72s10.68 0 13.33-.72a4.26 4.26 0 003.01-3c.5-2.72.74-5.47.72-8.22.02-2.75-.22-5.5-.72-8.21zM16.1 24.62V14.38l8.86 5.12-8.86 5.12z" fill="#fff"/></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+          <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.04 22.14s2.91 2.87 3.63 4.2l.04.06c.29.5.36.88.22 1.17-.24.46-1.07.7-1.35.72h-5.14c-.36 0-1.1-.1-2.01-.72-.7-.48-1.38-1.28-2.05-2.06-1-1.16-1.86-2.16-2.73-2.16a.98.98 0 00-.33.05c-.66.21-1.5 1.15-1.5 3.66 0 .78-.62 1.23-1.05 1.23H17.4c-.8 0-4.98-.28-8.69-4.19C4.18 19.32.1 9.72.06 9.64c-.25-.63.28-.96.86-.96h5.2c.7 0 .92.42 1.08.8.18.43.86 2.16 1.98 4.11 1.8 3.18 2.91 4.47 3.8 4.47.17 0 .33-.05.48-.13 1.16-.64.94-4.78.89-5.63 0-.17 0-1.85-.6-2.66a2.56 2.56 0 00-1.59-.9c.12-.16.37-.42.69-.58.8-.4 2.23-.45 3.65-.45h.8c1.54.02 1.93.12 2.5.26 1.13.27 1.15 1 1.05 3.5-.03.71-.06 1.52-.06 2.46v.66c-.04 1.28-.09 2.72.82 3.3.11.08.25.12.39.12.3 0 1.25 0 3.79-4.36a32.52 32.52 0 002.04-4.38c.05-.1.2-.36.39-.47.13-.07.27-.1.42-.1h6.11c.67 0 1.12.1 1.2.35.15.41-.02 1.66-2.81 5.43l-1.25 1.65c-2.52 3.32-2.52 3.49.15 6z" fill="#fff"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h36v36H0z"/></clipPath></defs></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+          <svg width="40" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.33 34.12V20.8h4.6l.7-5.21h-5.3v-3.32c0-1.5.43-2.54 2.64-2.54h2.81V5.08a38.18 38.18 0 00-4.11-.2c-4.08 0-6.87 2.42-6.87 6.87v3.83h-4.58v5.21h4.59v13.33h5.52z" fill="#fff"/></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+          <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31 5.58L4.4 15.83c-1.81.73-1.8 1.74-.33 2.2l6.83 2.12 15.8-9.96c.74-.46 1.43-.21.86.28l-12.8 11.56-.47 7.04c.7 0 1-.32 1.39-.7l3.31-3.22 6.9 5.1c1.27.7 2.19.34 2.5-1.18l4.53-21.34c.46-1.86-.7-2.7-1.92-2.15z" fill="#fff"/></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.56 2.44c0-.32.04-.51.6-.51h7.46c1.3 0 2.02 1.1 2.54 3.19l.42 1.66h1.27c.23-4.72.43-6.78.43-6.78s-3.2.36-5.1.36H6.65L1.53.2v1.37l1.72.32c1.21.24 1.5.5 1.6 1.6 0 0 .11 3.28.11 8.65 0 5.38-.09 8.6-.09 8.6 0 .98-.39 1.34-1.59 1.58l-1.72.33V24l5.13-.16h8.55c1.93 0 6.39.16 6.39.16.1-1.17.75-6.48.85-7.06h-1.2L20 19.84c-1 2.29-2.48 2.45-4.11 2.45h-4.9c-1.64 0-2.42-.64-2.42-2.05V12.8s3.62 0 4.79.1c.91.06 1.46.32 1.76 1.6l.39 1.69h1.4l-.08-4.28.2-4.3h-1.4l-.45 1.89c-.28 1.24-.48 1.47-1.75 1.6-1.67.17-4.82.14-4.82.14V2.45h-.05z" fill="#fff"/></svg>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <div class="modal modal-hide modal--search">
+    <form action="#" class="form form--search">
+
+      <input type="email" class="input input--flex-grow-1" placeholder="Название изделия">
+
+      <button class="button" type="submit">Поиск</button>
+
+      <div class="hamburgers hamburgers-close hamburgers--form-close">
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--top"></div>
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--bottom"></div>
+      </div>
+    
+    </form>
+  </div>
+
+  <div class="modal modal-hide modal--login">
+    <form action="#" class="form form--login">
+
+      <input type="email" class="input input--flex-grow-1" placeholder="e-mail">
+
+      <input type="password" class="input input--flex-grow-1" placeholder="пароль">
+
+      <button class="button" type="submit">Поиск</button>
+
+      <div class="form__line"></div>
+
+      <a class="button">Регистрация</a>
+
+      <div class="hamburgers hamburgers-close hamburgers--form-close">
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--top"></div>
+        <div class="hamburgers__line hamburgers-close__line hamburgers-close__line--bottom"></div>
+      </div>
+    
+    </form>
+  </div>
+
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
