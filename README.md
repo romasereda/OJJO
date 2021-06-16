@@ -1,5 +1,3 @@
-<a href="https://romasereda.github.io/OJJO/index.html">Page</a>
-
 <h1>Тренировочная работа</h1>
 
 <h2>Состоит из 4 страниц</h2>
